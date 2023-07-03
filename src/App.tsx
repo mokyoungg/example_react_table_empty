@@ -1,7 +1,11 @@
-import React from "react";
+import Table from "./component/table/Table";
 
 function App() {
-  return <div>check account</div>;
+  return (
+    <div>
+      <Table />
+    </div>
+  );
 }
 
 export default App;

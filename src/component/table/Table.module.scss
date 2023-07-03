@@ -1,0 +1,40 @@
+.table-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .table {
+    width: fit-content;
+    border-collapse: collapse;
+    height: 20px;
+
+    .table-td {
+      border: 1px solid #111111;
+      padding: 6px 12px;
+      box-sizing: border-box;
+
+      &:focus-within {
+        box-shadow: 0 0 0 2px #111111 inset;
+      }
+
+      .cell {
+        width: 104px;
+        min-height: 20px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        overflow: hidden;
+        overflow-wrap: break-word;
+      }
+    }
+  }
+
+  .option-container {
+    display: flex;
+    gap: 20px;
+
+    .options {
+      display: flex;
+    }
+  }
+}
